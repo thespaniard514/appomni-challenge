@@ -22,9 +22,8 @@
     </table>
     <Modal
         v-show="isModalVisible"
-        @close="closeModal"
-        @keydown.esc="closeModal">
-        <h2 slot="header">Hello!</h2>
+        @close="closeModal">
+        <h2 slot="header">View/Manage Contact</h2>
         <ContactForm slot="body" @submitted="updateContact"/>
         <div slot="footer">
           <button
