@@ -1,5 +1,5 @@
-<template v-show="errors">
-  <ul class="error-list">
+<template>
+  <ul class="error-list" v-show="errors.length">
     <li v-for="error in errors" :key="error" class="error">
       {{error}}
     </li>
